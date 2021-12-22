@@ -1,0 +1,38 @@
+{
+  "name": "cait-sith.link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build:storybook": "build-storybook -o build/storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com.fad:fad661/cait-sith.link.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
+    "@emotion/babel-plugin": "^11.7.2",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-docs": "^6.4.9",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/addon-viewport": "^6.4.9",
+    "@storybook/addons": "^6.4.9",
+    "@storybook/react": "^6.4.9"
+  }
+}
