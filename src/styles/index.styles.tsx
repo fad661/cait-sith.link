@@ -33,6 +33,7 @@ export const COLOR = {
   NORMAL: '#000',
   PLACEHOLDER: '#eee',
   DISABLED: '#aaa',
+  SELECTED: '#90ffc2',
 } as const;
 
 export const FONT = {

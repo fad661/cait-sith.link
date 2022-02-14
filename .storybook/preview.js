@@ -1,8 +1,9 @@
 import { addParameters } from '@storybook/react';
 import * as nextImage from 'next/image';
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { Global } from '@emotion/react';
+import { Global, ThemeProvider } from '@emotion/react';
 import reset from '../src/styles/reset.styles';
+import { cream } from '../src/styles/themes.styles';
 
 addParameters({
   options: {
@@ -23,7 +24,9 @@ export const decorators = [
   (Story) => (
     <>
       <Global styles={reset} />
-      <Story />
+      <ThemeProvider theme={cream}>
+        <Story />
+      </ThemeProvider>
     </>
   ),
 ];
