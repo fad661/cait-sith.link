@@ -1,4 +1,5 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
+import reset from './reset.styles';
 
 export const SHADOWS = {
   NARROW: 'rgba(0, 0, 0, 0.1) 0px 1px 2px 0px',
@@ -46,3 +47,11 @@ export const FONT = {
     NORMAL: COLOR.NORMAL,
   } as const,
 } as const;
+
+export default (theme: Theme) => css`
+  ${reset};
+  body {
+    font-family: ${theme.fonts.main};
+    font-size: ${FONT.SIZE.M};
+  }
+`;

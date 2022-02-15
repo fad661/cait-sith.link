@@ -1,9 +1,9 @@
 export const cream = {
   fonts: {
-    main: '',
+    main: 'yu-gothic-pr6n, sans-serif',
     sub: '',
     text: '',
-    alphanumeric: ''
+    alphanumeric: 'nimbus-sans, sans-serif'
   },
   colors: {
     light: {
