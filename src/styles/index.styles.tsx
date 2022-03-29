@@ -3,6 +3,7 @@ import reset from './reset.styles';
 
 export const SHADOWS = {
   NARROW: 'rgba(0, 0, 0, 0.1) 0px 1px 2px 0px',
+  BOX: 'rgba(0, 0, 0, 0.16) 0px 1px 4px;'
 } as const;
 
 const BP = {
@@ -51,7 +52,9 @@ export const FONT = {
 export default (theme: Theme) => css`
   ${reset};
   body {
+    color: ${theme.colors.light.text};
     font-family: ${theme.fonts.main};
     font-size: ${FONT.SIZE.M};
+    background-color: ${theme.colors.light.background};
   }
 `;
